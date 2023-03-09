@@ -1,12 +1,13 @@
 import React from 'react'
 import Rating from '@mui/material/Rating';
+import { calculateDiscount } from '../functions';
 const Course = ({course}) => {
     return (
         <>
             <div className='course__card--wrapper'>
                 <div className='course__card--upperbox'>
                     <div className='discount'>
-                        <p>20%</p>
+                        <p>{calculateDiscount(course.discounted_price,course.original_price)}%</p>
                         <p>off</p>
                     </div>
                     <div className='session__box'><p>18 Sessions</p></div>
