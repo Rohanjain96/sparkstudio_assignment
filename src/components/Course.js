@@ -26,7 +26,7 @@ const Course = ({course}) => {
                             })
                         }
                     </ul>
-                    <a href='#'>View Detailed Lesson Plan</a>
+                    <a href='/'>View Detailed Lesson Plan</a>
                     <div className='price__box'>
                         <div className='price'>
                             <span className='discount__price'>{course.discounted_price}</span>
